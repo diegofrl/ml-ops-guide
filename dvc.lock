@@ -1,36 +1,5 @@
 schema: '2.0'
 stages:
-  prepare:
-    cmd: python3.11 src/prepare.py data/raw data/prepared
-    deps:
-    - path: data/raw
-      hash: md5
-      md5: 6d8f0c274829764e1ea1112420825014.dir
-      size: 8822930
-      nfiles: 1605
-    - path: src/prepare.py
-      hash: md5
-      md5: 4eebf010d346897091c0a342aece4940
-      size: 2513
-    - path: src/utils/seed.py
-      hash: md5
-      md5: 963a551c177450f50e4f11bd1a9ab2c7
-      size: 437
-    params:
-      params.yaml:
-        prepare:
-          seed: 77
-          split: 0.2
-          image_size:
-          - 32
-          - 32
-          grayscale: true
-    outs:
-    - path: data/prepared
-      hash: md5
-      md5: fb3d8efa8d04f63d6d241d31758e28d3.dir
-      size: 6619331
-      nfiles: 8
   train:
     cmd: python3.11 src/train.py data/prepared model
     deps:
