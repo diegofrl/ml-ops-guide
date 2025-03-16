@@ -1,6 +1,6 @@
 # MLOps Workshop Repository
 
-This repository contains the work completed during the [MLOps workshop](https://mlops.swiss-ai-center.ch/syllabus/) provided by the Swiss AI Center. The workshop offers a comprehensive guide to implementing Machine Learning Operations (MLOps) practices, covering the entire machine learning lifecycle from local experimentation to cloud deployment and continuous integration.
+This repository contains the work completed during the MLOps workshop provided by the Swiss AI Center. The workshop offers a comprehensive guide to implementing Machine Learning Operations (MLOps) practices, covering the entire machine learning lifecycle from local experimentation to cloud deployment and continuous integration.
 
 ## Overview
 
